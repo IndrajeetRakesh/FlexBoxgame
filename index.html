@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flexbox Quest — a colorful mini-game interface built with HTML and CSS Flexbox.">
+  <title>Flexbox Quest | Mini Game UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="game-header">
+      <a class="brand" href="#" aria-label="Flexbox Quest home">
+        <span class="brand-icon" aria-hidden="true">✦</span>
+        <span>FLEXBOX <strong>QUEST</strong></span>
+      </a>
+
+      <div class="game-info" aria-label="Game status">
+        <div class="stat"><span class="stat-icon" aria-hidden="true">❤️</span><span class="stat-label">LIVES</span><strong>3</strong></div>
+        <div class="stat"><span class="stat-icon" aria-hidden="true">🪙</span><span class="stat-label">COINS</span><strong>120</strong></div>
+        <div class="stat"><span class="stat-icon" aria-hidden="true">⚡</span><span class="stat-label">LEVEL</span><strong>01</strong></div>
+        <div class="stat score-stat"><span class="stat-icon" aria-hidden="true">🏆</span><span class="stat-label">SCORE</span><strong>1250</strong></div>
+      </div>
+
+      <div class="header-actions">
+        <button class="button button-quiet" type="button">Ⅱ Pause</button>
+        <button class="button button-primary" type="button">☰ Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-row" aria-label="Game introduction">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> ADVENTURE MODE · WORLD 01</p>
+          <h1>Your next <span>great quest</span><br>starts here.</h1>
+          <p class="hero-copy">Explore the world, collect stars, and become a legend.</p>
+        </div>
+        <div class="level-badge" aria-label="Current level 1">
+          <span class="level-badge-icon">✹</span>
+          <span class="level-badge-label">CURRENT LEVEL</span>
+          <strong>01 <small>/ 10</small></strong>
+          <span class="level-track"><i></i></span>
+        </div>
+      </section>
+
+      <section class="game-area" aria-label="Illustrated game area">
+        <div class="scene-top">
+          <span class="scene-tag"><span class="live-dot"></span> LIVE WORLD</span>
+          <span class="scene-weather">☀️  SUNNY DAY</span>
+        </div>
+        <div class="scene-message">COLLECT ALL THE STARS! <span>✦</span></div>
+
+        <div class="sky-decorations" aria-hidden="true">
+          <span class="cloud cloud-one"></span>
+          <span class="cloud cloud-two"></span>
+          <span class="cloud cloud-three"></span>
+          <span class="sun">☀</span>
+          <span class="bird bird-one">⌁</span>
+          <span class="bird bird-two">⌁</span>
+        </div>
+
+        <div class="scene-world">
+          <div class="mountains" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="star-cluster" aria-label="Collectible stars"><span>★</span><span>★</span><span>★</span></div>
+          <div class="floating-platform platform-a"><span>✦</span></div>
+          <div class="floating-platform platform-b"><span>✦</span></div>
+          <div class="player-wrap">
+            <span class="player-label">YOU</span>
+            <div class="player-character" aria-label="Player character">
+              <span class="player-hair"></span>
+              <span class="player-face"><i></i><i></i><b></b></span>
+              <span class="player-body"></span>
+              <span class="player-arm arm-left"></span>
+              <span class="player-arm arm-right"></span>
+              <span class="player-leg leg-left"></span>
+              <span class="player-leg leg-right"></span>
+            </div>
+          </div>
+          <div class="ground-platform ground-one"><span class="grass"></span><span class="ground-blocks">◆　◆　◆　◆　◆　◆　◆　◆</span></div>
+          <div class="ground-platform ground-two"><span class="grass"></span><span class="ground-blocks">◆　◆　◆　◆　◆</span></div>
+          <div class="ground-platform ground-three"><span class="grass"></span><span class="ground-blocks">◆　◆　◆　◆</span></div>
+          <div class="scene-bush bush-one" aria-hidden="true">✿</div>
+          <div class="scene-bush bush-two" aria-hidden="true">✿</div>
+        </div>
+        <div class="scene-bottom"><span>🌿 GREEN VALLEY</span><span>CHECKPOINT <strong>● ● ○</strong></span></div>
+      </section>
+
+      <section class="game-panels" aria-label="Game panels">
+        <article class="panel controls-panel">
+          <div class="panel-heading">
+            <div class="panel-title-wrap"><span class="panel-icon purple-icon">⌘</span><div><h2>Controls</h2><p>Master your moves</p></div></div>
+            <span class="panel-number">01</span>
+          </div>
+          <div class="control-pad" aria-label="Illustrative movement controls">
+            <div class="control-row"><button type="button" class="key-button" aria-label="Move up">↑</button></div>
+            <div class="control-row">
+              <button type="button" class="key-button" aria-label="Move left">←</button>
+              <button type="button" class="key-button" aria-label="Move down">↓</button>
+              <button type="button" class="key-button" aria-label="Move right">→</button>
+            </div>
+            <button type="button" class="jump-button">⤴ &nbsp; JUMP</button>
+          </div>
+          <p class="panel-hint"><span>⌨</span> Use arrow keys to move</p>
+        </article>
+
+        <article class="panel inventory-panel">
+          <div class="panel-heading">
+            <div class="panel-title-wrap"><span class="panel-icon gold-icon">▣</span><div><h2>Inventory</h2><p>Your adventure kit</p></div></div>
+            <span class="item-count">4 ITEMS</span>
+          </div>
+          <div class="inventory-items">
+            <div class="inventory-item"><span class="item-emoji">⚔️</span><strong>Sword</strong><small>Lv. 1</small></div>
+            <div class="inventory-item"><span class="item-emoji">🛡️</span><strong>Shield</strong><small>Defense</small></div>
+            <div class="inventory-item"><span class="item-emoji">🧪</span><strong>Potion</strong><small>+50 HP</small></div>
+            <div class="inventory-item"><span class="item-emoji">🗝️</span><strong>Golden Key</strong><small>Rare</small></div>
+            <div class="inventory-item extra-item"><span class="item-emoji">🏹</span><strong>Bow</strong><small>Ranged</small></div>
+            <div class="inventory-item extra-item"><span class="item-emoji">🧭</span><strong>Map</strong><small>Explore</small></div>
+          </div>
+          <p class="panel-hint"><span>✦</span> Collect items to power up</p>
+        </article>
+
+        <article class="panel quest-panel">
+          <div class="panel-heading">
+            <div class="panel-title-wrap"><span class="panel-icon green-icon">⚑</span><div><h2>Quest Log</h2><p>Make every move count</p></div></div>
+            <span class="quest-live">ACTIVE</span>
+          </div>
+          <div class="quest-list">
+            <div class="quest-item"><span class="quest-check done">✓</span><div class="quest-copy"><strong>Collect 3 stars</strong><small>Find stars around the valley</small><div class="quest-progress"><i class="progress-stars"></i></div></div><span class="quest-count">1/3</span></div>
+            <div class="quest-item"><span class="quest-check">◇</span><div class="quest-copy"><strong>Find the golden key</strong><small>Unlock the hidden gate</small><div class="quest-progress"><i class="progress-key"></i></div></div><span class="quest-count">0/1</span></div>
+            <div class="quest-item"><span class="quest-check">◇</span><div class="quest-copy"><strong>Defeat the monster</strong><small>Prove your courage</small><div class="quest-progress"><i class="progress-monster"></i></div></div><span class="quest-count">0/1</span></div>
+          </div>
+          <div class="quest-reward"><span>🎁</span><span><strong>Quest reward</strong><small>+250 XP · 50 coins</small></span><span class="reward-lock">🔒</span></div>
+        </article>
+      </section>
+
+      <section class="tip-bar" aria-label="Adventure tip">
+        <span class="tip-icon">💡</span>
+        <p><strong>ADVENTURER TIP</strong> Keep an eye out for hidden stars — some rewards are tucked away!</p>
+        <span class="tip-arrow">✦</span>
+      </section>
+    </main>
+
+    <footer class="game-footer">
+      <a class="footer-brand" href="#">✦ FLEXBOX QUEST</a>
+      <p>BUILT FOR ADVENTURE <span>♥</span> POWERED BY FLEXBOX</p>
+      <span class="footer-version">UI DEMO · v1.0</span>
+    </footer>
+  </div>
+</body>
+</html>
